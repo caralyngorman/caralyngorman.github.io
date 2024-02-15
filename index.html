@@ -12,7 +12,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Andale Mono;
+  font-family: monospace;
 }
 
 /* Style tab links */
@@ -52,13 +52,18 @@ body, html {
 .tabcontent {
   color: black;
   display: none;
-  padding: 100px 20px;
+  padding: 100px 100px;
   height: 100%;
+  width: 75%;
+}
+
+.tab-wide {
   width: 100%;
+  padding: 100px 20px;
 }
 
 .paragraph {
-  width: 70%;
+  width: 100%;
 }
 
 #Home {background-color: white;}
@@ -74,7 +79,7 @@ body, html {
 <button class="tablink resume-tablink" onclick="openPage('Resume', this, 'green')">Resume</button>
 <button class="tablink projects-tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
 
-<div id="Home" class="tabcontent">
+<div id="Home" class="tabcontent tab-wide">
   <h1>Hi, I'm Caralyn! &#128075; I'm a Software Engineer based in Chicago, IL.</h1>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <a xlink:href="https://www.linkedin.com/in/caralyn-gorman-725467a7/">
@@ -88,11 +93,12 @@ body, html {
 
 <div id="About" class="tabcontent">
   <h2>About</h2>
-  <p class="paragraph">I'm software engineer and team lead with over 3 years of experience in full stack web development. At Badger Meter, I work on applications that help utilities to manage water consumption.
-    I spend most days creating ways for users to easily access and analyze water data, with the goal of driving water conservation.
+  <p class="paragraph">I'm software engineer and team lead with over 3 years of experience in full stack web development. 
+    At Badger Meter, I work on applications that help utilities manage water consumption and engage with customers.
+    I spend most days creating ways for users to access and analyze water data, with the goal of driving water conservation.
   </p>
-  <p class="paragraph">Previously, I studied the spatial pattern of high severity burn in Western US wildfires as a Masters student in Geography at UC Berkeley. 
-    Before that, I studied and worked in Environmental Science at the University of Pittsburgh. </p>
+  <p class="paragraph">Previously, I studied the spatial pattern of high severity burn in Western US wildfires as a Masters student in 
+    Geography at the University of California, Berkeley. Before that, I studied and worked in environmental science in Pittsburgh, PA. </p>
   <p class="paragraph">I'm passionate about sustainability and conservation. I love problem solving, learning new skills, and 
     collaborating with team members on great solutions.</p>
   <p class="paragraph">In my free time, I love to cook, spend time outdoors, and hang out with my cat, Oliver.</p>
@@ -106,7 +112,7 @@ body, html {
   <p><b>Software</b> <br>Jira, FTP, Git/Github, Figma</p>
   <p><b>Concepts</b> <br>Agile, REST/HTTP, JSON/XML</p>
   <h2>Experience</h2>
-  <p>Badger Meter, Los Gatos CA (Remote)</p>
+  <p>Badger Meter, Los Gatos, CA (Remote)</p>
   <p>Current: Software Engineer II/Web Services Team Lead<br>Previous: Software Engineer I</p>
   <p class="paragraph">
     <li class="paragraph">Lead daily standup and biweekly sprint planning, coordinate communication between development, marketing, and strategic software services groups, and offer project support to 3 engineers</li>
@@ -130,7 +136,7 @@ body, html {
      <a href="https://caralyngorman.users.earthengine.app/view/camp-fire-sliding-map-3-9-19">simple app</a> to display the results with geographic context. We presented these results in a <a href="https://www.researchgate.net/publication/332430575_Rapid_remote_sensing_assessment_of_landscape-scale_impacts_from_the_California_Camp_Fire">PeerJ preprint</a>.</p>
   <h3>Defining wildfires through the lens of high severity spatial pattern</h3>
   <p class="paragraph">Larger and more extreme wildfire events have become increasingly common, spurring the development of the term “megafire”.
-     As part of my Master's thesis, I examined the whether the spatial pattern of high severity burn patches, rather than burn area alone,
+     As part of my Masters thesis, I examined the whether the spatial pattern of high severity burn patches, rather than burn area alone,
      could be a better indicator of a severe fire event. To learn more, check out the <a href="files/Rethinking megafires_ defining severe wildfire events through the lens of high severity spatial pattern.pdf">paper</a> and the 
      <a href="https://github.com/caralyngorman/high-severity-lsm">analysis report</a>.</p>
   <!-- <p>This website!</p> -->
