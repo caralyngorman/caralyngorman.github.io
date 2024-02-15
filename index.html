@@ -36,19 +36,14 @@ body, html {
   color: orange;
 }
 
-.resume-tablink {
+.projects-tablink {
   color: green;
 }
 
-.projects-tablink {
+.resume-tablink {
   color: blue;
 }
 
-/* .tablink:hover {
-  background-color: #777;
-} */
-
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: black;
   display: none;
@@ -83,8 +78,8 @@ body, html {
 
 <button class="tablink welcome-tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Hello!</button>
 <button class="tablink about-tablink" onclick="openPage('About', this, 'orange')">About</button>
-<button class="tablink resume-tablink" onclick="openPage('Resume', this, 'green')">Resume</button>
-<button class="tablink projects-tablink" onclick="openPage('Projects', this, 'blue')">Projects</button>
+<button class="tablink projects-tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
+<button class="tablink resume-tablink" onclick="openPage('Resume', this, 'blue')">Resume</button>
 
 <div id="Home" class="tabcontent tab-wide">
   <h1>Hi, I'm Caralyn! &#128075; I'm a Software Engineer based in Chicago, IL.</h1>
@@ -111,6 +106,22 @@ body, html {
   <p class="paragraph">In my free time, I love to cook, spend time outdoors, and hang out with my cat, Oliver.</p>
 </div>
 
+<div id="Projects" class="tabcontent">
+  <h2>Projects</h2>
+  <h3>Satellite imagery analysis of the 2018 Camp Fire in Google Earth Engine</h3>
+  <p class="paragraph">In 2018, the Camp Fire devastated the community and landscape in Paradise, California.
+     My research group processed Landsat 8 images of the affected region before, during, and after the fire, 
+     and created a 
+     <a href="https://caralyngorman.users.earthengine.app/view/camp-fire-sliding-map-3-9-19">simple app</a> to display the results with geographic context. We presented these results in a <a href="https://www.researchgate.net/publication/332430575_Rapid_remote_sensing_assessment_of_landscape-scale_impacts_from_the_California_Camp_Fire">PeerJ preprint</a>.</p>
+     <img src="files/fire_app.gif" alt="Camp Fire App"  width="650"/>
+
+     <h3>Defining wildfires through the lens of high severity spatial pattern</h3>
+  <p class="paragraph">Larger and more extreme wildfire events have become increasingly common, spurring the development of the term “megafire”.
+     As part of my Masters thesis, I used statistical methods to examine whether the spatial pattern of high severity burn patches, rather than burn area alone,
+     could be a better indicator of a severe fire event. To learn more, check out the <a href="files/Rethinking megafires_ defining severe wildfire events through the lens of high severity spatial pattern.pdf">paper</a> and the 
+     <a href="https://github.com/caralyngorman/high-severity-lsm">analysis report</a>.</p>
+</div>
+
 <div id="Resume" class="tabcontent">
   <h2>Technical Skills</h2>
   <p><b>Languages</b> <br> Python, JavaScript, CoffeeScript, TypeScript, HTML5, CSS3</p>
@@ -132,21 +143,6 @@ body, html {
   <h2>Education</h2>
   <p>University of California, Berkeley - Master of Arts, Geography</p>
   <p>University of Pittsburgh - Bachelor of Science, Environmental Geology</p>
-</div>
-
-<div id="Projects" class="tabcontent">
-  <h2>Projects</h2>
-  <h3>Satellite imagery analysis of the 2018 Camp Fire in Google Earth Engine</h3>
-  <p class="paragraph">In 2018, the Camp Fire devastated the community and landscape in Paradise, California.
-     My research group processed Landsat 8 images of the affected region before, during, and after the fire, 
-     and created a 
-     <a href="https://caralyngorman.users.earthengine.app/view/camp-fire-sliding-map-3-9-19">simple app</a> to display the results with geographic context. We presented these results in a <a href="https://www.researchgate.net/publication/332430575_Rapid_remote_sensing_assessment_of_landscape-scale_impacts_from_the_California_Camp_Fire">PeerJ preprint</a>.</p>
-  <h3>Defining wildfires through the lens of high severity spatial pattern</h3>
-  <p class="paragraph">Larger and more extreme wildfire events have become increasingly common, spurring the development of the term “megafire”.
-     As part of my Masters thesis, I used statistical methods to examine whether the spatial pattern of high severity burn patches, rather than burn area alone,
-     could be a better indicator of a severe fire event. To learn more, check out the <a href="files/Rethinking megafires_ defining severe wildfire events through the lens of high severity spatial pattern.pdf">paper</a> and the 
-     <a href="https://github.com/caralyngorman/high-severity-lsm">analysis report</a>.</p>
-  <!-- <p>This website!</p> -->
 </div>
 
 <script>
